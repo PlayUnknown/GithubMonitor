@@ -89,6 +89,7 @@ python3 manage.py monitor_task_service
 执行: npm install && npm run start
 ```
 使用手册
+
 1.添加Token
 Github Monitor使用Github REST API v3接口进行搜索，所以需要预先配置Token进行认证。
 
