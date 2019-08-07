@@ -51,7 +51,7 @@ INIT_ADMIN_PASSWORD="password123!@#"  # 初始化系统用户使用的用户密�
 修改启动端口
 如果想修改启动端口，可以修改`docker-compose.yaml`文件中web容器的ports。
 
-默认为8001:80，比如要修改为8080端口可改为8080:80。
+默认为 `8001:80 `，比如要修改为 `8080 `端口可改为 `8080:80 `。
 
 2. 源码部署:
 项目运行依赖 redis, 请在运行服务前启动redis-server
@@ -69,8 +69,8 @@ INIT_ADMIN_PASSWORD="password123!@#"  # 初始化系统用户使用的用户密�
 
 4.在mysql里创建数据库(如使用sqlite、请忽略此步):
 
-    登录进mysql后， 执行 `CREATE DATABASE IF NOT EXISTS github DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_bin;
-`
+  登录进mysql后， 执行 `CREATE DATABASE IF NOT EXISTS github DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_bin; `
+
 
 在server目录下执行如下脚本:
 ```
