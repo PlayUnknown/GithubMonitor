@@ -1,0 +1,57 @@
+
+> puppeteer@1.19.0 install /app/Github-Monitor/client/node_modules/puppeteer
+> node install.js
+
+ERROR: Failed to download Chromium r674921! Set "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD" env variable to skip download.
+{ Error: EACCES: permission denied, mkdir '/app/Github-Monitor/client/node_modules/puppeteer/.local-chromium'
+  -- ASYNC --
+    at BrowserFetcher.<anonymous> (/app/Github-Monitor/client/node_modules/puppeteer/lib/helper.js:111:15)
+    at Object.<anonymous> (/app/Github-Monitor/client/node_modules/puppeteer/install.js:64:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'mkdir',
+  path:
+   '/app/Github-Monitor/client/node_modules/puppeteer/.local-chromium' }
+npm WARN @antv/g2-plugin-slider@2.1.0 requires a peer of @antv/g2@>=3.2.8 but none is installed. You must install peer dependencies yourself.
+npm WARN @typescript-eslint/eslint-plugin@1.13.0 requires a peer of @typescript-eslint/parser@^1.9.0 but none is installed. You must install peer dependencies yourself.
+npm WARN babel-plugin-dva-hmr@0.4.2 requires a peer of redbox-react@1.x but none is installed. You must install peer dependencies yourself.
+npm WARN connected-react-router@6.5.2 requires a peer of react-redux@^6.0.0 || ^7.1.0 but none is installed. You must install peer dependencies yourself.
+npm WARN dva-immer@0.4.5 requires a peer of dva@^2.5.0-0 but none is installed. You must install peer dependencies yourself.
+npm WARN dva-loading@3.0.6 requires a peer of dva-core@^1.1.0 | ^1.5.0-0 | ^1.6.0-0 but none is installed. You must install peer dependencies yourself.
+npm WARN eslint-config-react-app@4.0.1 requires a peer of @typescript-eslint/parser@1.x but none is installed. You must install peer dependencies yourself.
+npm WARN eslint-config-react-app@4.0.1 requires a peer of babel-eslint@10.x but none is installed. You must install peer dependencies yourself.
+npm WARN eslint-config-umi@1.5.0 requires a peer of eslint-plugin-react-hooks@1.5.0 but none is installed. You must install peer dependencies yourself.
+npm WARN react-fittext@1.0.0 requires a peer of react@^15.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN react-fittext@1.0.0 requires a peer of react-dom@^15.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN rollup-plugin-babel@4.3.3 requires a peer of rollup@>=0.60.0 <2 but none is installed. You must install peer dependencies yourself.
+npm WARN rollup-plugin-commonjs@9.3.4 requires a peer of rollup@>=0.56.0 but none is installed. You must install peer dependencies yourself.
+npm WARN stylelint-order@3.0.1 requires a peer of stylelint@^10.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN dva@2.6.0-beta.6 requires a peer of react@^16.18.4 but none is installed. You must install peer dependencies yourself.
+npm WARN dva@2.6.0-beta.6 requires a peer of react-dom@^16.18.4 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/watchpack/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/react-dev-utils/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/jest-haste-map/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fork-ts-checker-webpack-plugin/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.0.7 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.0.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: puppeteer@1.19.0 (node_modules/puppeteer):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: puppeteer@1.19.0 install: `node install.js`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+
+audited 1819823 packages in 21.414s
+found 7 vulnerabilities (1 low, 6 moderate)
+  run `npm audit fix` to fix them, or `npm audit` for details
