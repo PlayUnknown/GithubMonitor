@@ -4,6 +4,7 @@
 `git clone https://github.com/PlayUnknown/GithubMonitor.git`
 
 1. docker 部署
+
 我们推荐使用Docker进行部署, 相对于源码部署更为简单和快速。
 
 部署前请务必先安装Docker及docker-compose。
@@ -59,15 +60,17 @@ INIT_ADMIN_PASSWORD="password123!@#"  # 初始化系统用户使用的用户密�
 
 
 后端代码运行部署:
-测试环境可以使用django runserver的方式来进行部署，生产环境建议使用uwsgi + Nginx的方式部署，配置文件的示例可以参考 配置 目录下的文件。
 
-进入项目根目录下的server目录
+1.测试环境可以使用django runserver的方式来进行部署，生产环境建议使用uwsgi + Nginx的方式部署，配置文件的示例可以参考 配置 目录下的文件。
 
-配置virtualenv环境（建议）
+2.进入项目根目录下的server目录
 
-在mysql里创建数据库(如使用sqlite、请忽略此步):
+3.配置virtualenv环境（建议）
 
-登录进mysql后， 执行 CREATE DATABASE IF NOT EXISTS github DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_bin;
+4.在mysql里创建数据库(如使用sqlite、请忽略此步):
+
+    登录进mysql后， 执行 `CREATE DATABASE IF NOT EXISTS github DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_bin;
+`
 
 在server目录下执行如下脚本:
 ```
@@ -94,7 +97,7 @@ python3 manage.py monitor_task_service
 Github Monitor使用Github REST API v3接口进行搜索，所以需要预先配置Token进行认证。
 
 
-首先登录Github，然后进入Token配置页面创建Token。
+首先登录Github，然后进入[Token配置页面](https://github.com/settings/tokens)创建Token。
 
 随后把Token添加到Github Monitor中。
 
@@ -120,5 +123,7 @@ Github API有次数限制，1分钟最多请求30次，为了提高爬取速度�
 爬虫爬取到的数据会入库，可以在查询系统中进行操作，进行处理/加白/忽略仓库操作。
 
 处理：确认有风险，需要处理。
+
 加白：确认无风险，以后不会再提醒，如果文件有修改，还是会再次提醒。
+
 忽略仓库：批量加白该仓库下已经发现的信息。
