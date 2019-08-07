@@ -85,14 +85,14 @@ python3 manage.py runserver 127.0.0.1:8001
 #启动监控任务服务:
 python3 manage.py monitor_task_service
 ```
-*前端代码部署:
+* 前端代码部署:
 ```测试环境可以使用 `npm run start` 方式启动, 生产环境建议先通过 `npm run build`生成静态文件，然后通过nginx做转发来做。```
 
 进入项目根目录下的`client`目录
 如果后端接口地址不为 `127.0.0.1:8001`, 需要修改`config/config.local.js`, 将target修改为后端地址即可
 执行: npm install && npm run start
 
-*使用手册
+* 使用手册
 
 1.添加Token
 Github Monitor使用Github REST API v3接口进行搜索，所以需要预先配置Token进行认证。
