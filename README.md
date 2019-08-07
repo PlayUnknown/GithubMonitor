@@ -59,7 +59,7 @@ INIT_ADMIN_PASSWORD="password123!@#"  # 初始化系统用户使用的用户密�
 首先将.env.sample复制一份重命名为.env，并按照自己的要求修改配置:
 
 
-后端代码运行部署:
+*后端代码运行部署:
 
 1.测试环境可以使用django runserver的方式来进行部署，生产环境建议使用uwsgi + Nginx的方式部署，配置文件的示例可以参考 配置 目录下的文件。
 
@@ -84,14 +84,15 @@ python3 manage.py init_admin
 python3 manage.py runserver 127.0.0.1:8001
 #启动监控任务服务:
 python3 manage.py monitor_task_service
-前端代码部署:
-测试环境可以使用 npm run start 方式启动, 生产环境建议先通过 npm run build生成静态文件，然后通过nginx做转发来做。
-
-进入项目根目录下的client目录
-如果后端接口地址不为 127.0.0.1:8001, 需要修改config/config.local.js, 将target修改为后端地址即可
-执行: npm install && npm run start
 ```
-使用手册
+*前端代码部署:
+```测试环境可以使用 `npm run start` 方式启动, 生产环境建议先通过 `npm run build`生成静态文件，然后通过nginx做转发来做。```
+
+进入项目根目录下的`client`目录
+如果后端接口地址不为 `127.0.0.1:8001`, 需要修改`config/config.local.js`, 将target修改为后端地址即可
+执行: npm install && npm run start
+
+*使用手册
 
 1.添加Token
 Github Monitor使用Github REST API v3接口进行搜索，所以需要预先配置Token进行认证。
