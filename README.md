@@ -92,6 +92,7 @@ python3 manage.py monitor_task_service
 1.添加Token
 Github Monitor使用Github REST API v3接口进行搜索，所以需要预先配置Token进行认证。
 
+
 首先登录Github，然后进入Token配置页面创建Token。
 
 随后把Token添加到Github Monitor中。
