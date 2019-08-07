@@ -59,7 +59,7 @@ INIT_ADMIN_PASSWORD="password123!@#"  # 初始化系统用户使用的用户密�
 首先将.env.sample复制一份重命名为.env，并按照自己的要求修改配置:
 
 
-*后端代码运行部署:
+* 后端代码运行部署:
 
 1.测试环境可以使用django runserver的方式来进行部署，生产环境建议使用uwsgi + Nginx的方式部署，配置文件的示例可以参考 配置 目录下的文件。
 
